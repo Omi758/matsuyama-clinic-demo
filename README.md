@@ -11,7 +11,7 @@
 
 ## 📝 Overview（概要）
 
-HelloMentor 課題で制作した医療系クリニックの架空リクルーティングサイト（静的コーディング）です
+HelloMentor 課題で制作した医療系クリニックの架空リクルーティングサイト（静的コーディング）です。
 
 - リキッドレイアウトを採用
 
@@ -29,9 +29,13 @@ HelloMentor 課題で制作した医療系クリニックの架空リクルー�
 
 ## 🛠️ Tech Stack（使用技術）
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="30" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="30" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="30" />
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" alt="HTML5" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" alt="CSS3" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="40" alt="SCSS" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=black" width="60" alt="GSAP" />
+</p>
 
 &nbsp;
 
@@ -40,16 +44,16 @@ HelloMentor 課題で制作した医療系クリニックの架空リクルー�
 ### 1. ハンバーガーメニューを GSAP でアニメーション
 
 - モーダルのフェードイン・フェードアウト
-- ユーザー操作に応じた閉じ処理（クリック・リンク選択・エスケープキー押下等）
+- ユーザー操作に応じた閉じ処理（クリック・リンク選択・エスケープキー押下 等）
 
 ### 2. BEM ベースの CSS 設計 と 保守性の高い ES Modules を採用した構成
 
-- 読みやすい class 命名と SCSS のファイル分割と構造化
-- 保守性の高い ES Modules を採用し、干渉を最小限に抑えた構成
+- 読みやすい class 命名と SCSS のファイル分割
+- ES Modules を使用してスクリプトの保守性を向上
 
 ### 3. レスポンシブ対応
 
-- SP / PC のレスポンシブ対応、余白とタイポグラフィの調整
+- SP / PC 双方で閲覧性を意識した余白・タイポグラフィ調整
 
 ### 4. CSS アニメーションを使用した UI 効果
 
