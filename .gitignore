@@ -1,0 +1,14 @@
+# OS の不要ファイル
+.DS_Store
+Thumbs.db
+
+# VSCode設定（個人環境）
+.vscode/
+
+# 一時ファイル
+*.zip
+*.tmp
+
+# Sass を使う場合のキャッシュ
+.sass-cache/
+*.map

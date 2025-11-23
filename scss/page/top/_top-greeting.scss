@@ -1,0 +1,171 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-greeting
+------------------------------
+*/
+.top-greeting {
+  position: relative;
+  z-index: 3;
+  padding-top: 48rem;
+  padding-bottom: 120rem;
+  overflow: hidden;
+  @include g.mq() {
+    padding-top: 96rem;
+    padding-bottom: 219rem;
+  }
+}
+
+// 文字背景画像
+.top-greeting::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/bg-text-greeting@2x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 762rem;
+  height: 204rem;
+  left: -119rem;
+  top: 619rem;
+
+  @include g.mq() {
+    width: 1241rem;
+    height: 332rem;
+    left: 445rem;
+    top: 316rem;
+  }
+}
+
+.top-greeting::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/top-greeting-hands-sp@2x.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 132rem;
+  aspect-ratio: 132 / 200;
+  right: 0;
+  top: 916rem;
+
+  @include g.mq() {
+    background-image: url(../img/top-greeting-hands@2x.jpg);
+    width: 300rem;
+    aspect-ratio: 1 /1;
+    right: 84rem;
+    top: 576rem;
+  }
+}
+
+.top-greeting-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include g.mq() {
+    flex-direction: row;
+    gap: 120rem;
+  }
+}
+
+.top-greeting-image-wrapper {
+  position: relative;
+  display: inline-block;
+  left: 0;
+  top: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 265rem;
+    height: 112rem;
+    background: linear-gradient(180deg, #d8f2d3 0%, #d5eaf8 100%);
+    opacity: 0.5;
+    z-index: -1;
+    top: 261rem;
+    left: 18rem;
+
+    @include g.mq() {
+      width: 500rem;
+      height: 211rem;
+      top: 494rem;
+      left: 33rem;
+    }
+  }
+}
+
+.top-greeting-image {
+  width: 265rem;
+  aspect-ratio: 265 / 353;
+  object-fit: cover;
+
+  @include g.mq() {
+    width: 500rem;
+  }
+}
+
+.top-greeting-container {
+  margin-inline: auto;
+  margin-top: 68rem;
+  width: calc(340px / 380px * 100%);
+  position: relative;
+  @include g.mq() {
+    width: 100%;
+    margin-top: 76rem;
+  }
+}
+
+.top-greeting-copy {
+  font-size: 32rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin-top: 32rem;
+
+  @include g.mq() {
+    & > span {
+      display: block;
+    }
+  }
+
+  @include g.mq() {
+    font-size: 40rem;
+    margin-top: 56rem;
+  }
+}
+
+.top-greeting-copy-inner span {
+  display: block;
+  @include g.mq() {
+    display: inline;
+  }
+}
+
+.top-greeting-text-wrapper {
+  display: grid;
+  gap: 23rem;
+  margin-top: 32rem;
+}
+
+.top-greeting-text {
+  line-height: 2.2;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  & > span {
+    display: block;
+  }
+}
+
+.top-greeting-text-inner span {
+  @include g.mq() {
+    display: block;
+  }
+}
+
+.top-greeting-button {
+  margin-top: 32rem;
+  display: inline-block;
+
+  @include g.mq() {
+    margin-top: 56rem;
+  }
+}

@@ -1,0 +1,68 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-kv
+------------------------------
+*/
+
+// ラッパー
+.top-kv-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100svh;
+
+  @include g.mq() {
+    height: calc(100svh + 80rem);
+  }
+}
+
+// 背景コンテナ
+.top-kv-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+// メイン画像
+.top-kv-image {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+// オーバーレイフィルター
+.top-kv-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 152, 220, 0.15);
+  z-index: 2;
+}
+
+// キャッチコピー
+.top-kv-catchcopy {
+  position: absolute;
+  width: 357rem;
+  top: 243rem;
+  z-index: 3;
+
+  @include g.mq() {
+    width: 664rem;
+    top: 234rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}

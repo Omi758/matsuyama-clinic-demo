@@ -1,0 +1,104 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-entry
+------------------------------
+*/
+
+.top-entry-wrapper {
+  background-color: var(--color-bg-entry);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 48rem;
+
+  @include g.mq() {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+}
+
+.top-entry-image-container {
+  position: relative;
+  z-index: 0;
+}
+
+.top-entry-image {
+  position: relative;
+  display: block;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 380 /240;
+  @include g.mq() {
+    width: 740rem;
+  }
+}
+
+.top-entry-image-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 152, 220, 0.15),
+    rgba(0, 152, 220, 0.15)
+  );
+  z-index: 2;
+}
+
+.top-entry-text-container {
+  width: calc(340px / 380px * 100%);
+  margin-inline: auto;
+  padding-top: 48rem;
+  display: grid;
+  gap: 20rem;
+
+  @include g.mq() {
+    width: 100%;
+    margin-inline: 0;
+    padding: 78rem 72rem;
+    gap: 30rem;
+  }
+}
+
+.top-entry-title-container {
+  flex-direction: column;
+  gap: 0;
+  align-items: start;
+}
+
+.top-entry-title {
+  display: flex;
+  gap: 8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-entry-title::before {
+  content: "";
+  display: block;
+  width: 34rem;
+  height: 1rem;
+  background-color: var(--color-font-light);
+
+  @include g.mq() {
+    width: 70rem;
+  }
+}
+
+.top-entry-text {
+  line-height: 2;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+
+  & span {
+    display: block;
+  }
+}
+
+.top-entry-button {
+  display: block;
+  justify-self: start;
+}

@@ -1,0 +1,135 @@
+@use "../global" as g;
+
+/*!
+layout > footer
+------------------------------
+*/
+.footer {
+  background-color: var(--color-bg-base);
+}
+
+.footer-company-info {
+  padding-top: 56rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include g.mq() {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-logo {
+  display: block;
+  width: 153rem;
+  aspect-ratio: 153 / 36; // アスペクト比を指定_レイアウトシフト防止
+  @include g.mq() {
+    width: 283rem;
+    aspect-ratio: 283 / 42; // アスペクト比を指定_レイアウトシフト防止
+  }
+}
+
+.footer-nav-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 32rem;
+  align-items: center;
+  @include g.mq() {
+    flex-direction: row;
+  }
+}
+
+.footer-nav {
+  padding-top: 40rem;
+  @include g.mq() {
+    padding-top: 0;
+  }
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-wrap: wrap; // 折り返し
+  justify-content: center;
+  gap: 16rem 32rem;
+  @include g.mq() {
+    flex-wrap: nowrap;
+    gap: 32rem;
+  }
+}
+
+.footer-nav-item {
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+  position: relative;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.footer-button a {
+  display: flex;
+  gap: 16rem;
+  align-items: center;
+  font-size: 14rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  padding: 14rem 24rem;
+  border-radius: 50vh;
+  background: linear-gradient(134.57deg, #e4eff9 0%, #e3f3f3 50%, #b6def0 100%);
+
+  &::after {
+    content: "";
+    display: block;
+    width: 5.6rem;
+    height: 10.5rem;
+    background-image: url("../img/icon-arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.2s ease-in-out;
+  }
+
+  &:hover {
+    &::after {
+      transform: translateX(3rem);
+    }
+  }
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 56rem 0;
+  gap: 22rem;
+  @include g.mq() {
+    align-items: end;
+  }
+}
+
+.footer-link-list {
+  display: flex;
+  gap: 30rem;
+}
+
+.footer-link-item {
+  font-size: 12rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+
+  :hover {
+    opacity: 0.7;
+  }
+}
+
+.footer-copyright {
+  display: inline-block;
+  font-size: 12rem;
+  letter-spacing: 0.05em;
+  font-family: var(--font-family-en);
+}

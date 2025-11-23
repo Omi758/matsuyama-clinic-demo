@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MATSUYAMA CLINIC</title>
+    <meta name="description" content="ページの説明" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- favicon/webclipicon -->
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/webclip.png" />
+
+    <!-- ogp -->
+    <meta property="og:site_name" content="MATSUYAMA CLINIC" />
+    <meta property="og:url" content="URL" />
+    <meta property="og:type" content="website or article" />
+    <meta property="og:title" content="MATSUYAMA CLINIC" />
+    <meta property="og:description" content="ページの説明" />
+    <meta property="og:image" content="img/ogp.png" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="ページの説明" />
+    <meta name="twitter:image:src" content="URL" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" type="module"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <h1 class="header-logo">
+        <a
+          href="https://www.google.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <picture class="header-logo-img">
+            <source media="(max-width: 767px)" srcset="img/logo-white-sp.svg" />
+            <source media="(min-width: 768px)" srcset="img/logo-white.svg" />
+            <img
+              src="img/logo-white.svg"
+              alt="MATSUYAMA CLINIC"
+              width="300"
+              height="46"
+            />
+          </picture>
+        </a>
+      </h1>
+
+      <div class="header-nav-inner">
+        <button class="header-open-button js-button" type="button">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-text">menu</span>
+        </button>
+        <a
+          href="https://www.google.com/"
+          class="header-entry-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          entry<span>エントリー</span>
+        </a>
+
+        <dialog class="header-menu js-menu" aria-label="メニュー一覧">
+          <div class="header-menu-header">
+            <a
+              href="https://www.google.com/"
+              class="header-menu-logo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="img/logo-white-sp.svg"
+                alt="MATSUYAMA CLINIC"
+                width="300"
+                height="46"
+              />
+            </a>
+            <button class="header-close-button js-close-button">close</button>
+          </div>
+
+          <nav class="header-nav" aria-label="メインナビゲーション">
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a href="#greeting" class="js-nav-link"
+                  ><span class="header-nav-subtitle">greeting</span>ご挨拶</a
+                >
+              </li>
+              <li class="header-nav-item">
+                <a href="#feature" class="js-nav-link"
+                  ><span class="header-nav-subtitle">feature</span>３つの特徴</a
+                >
+              </li>
+              <li class="header-nav-item">
+                <a href="#interview" class="js-nav-link">
+                  <span class="header-nav-subtitle">interview</span
+                  >インタビュー</a
+                >
+              </li>
+              <li class="header-nav-item">
+                <a href="#news" class="js-nav-link"
+                  ><span class="header-nav-subtitle">news</span>新着情報</a
+                >
+              </li>
+              <li class="header-nav-item">
+                <a href="#" class="js-nav-link"
+                  ><span class="header-nav-subtitle">topic</span>トピック</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <a
+            href="https://www.google.com/"
+            class="header-menu-entry-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="header-menu-entry-text">
+              entry<span>エントリー</span>
+            </div></a
+          >
+        </dialog>
+      </div>
+    </header>
+    <!-- header-end -->
+
+    <main>
+      <!-- top-kv -->
+
+      <div class="top-kv-wrapper">
+        <div class="top-kv-bg">
+          <picture class="top-kv-image">
+            <source media="(max-width: 767px)" srcset="img/top-kv-sp@2x.jpg" />
+            <source media="(min-width: 768px)" srcset="img/top-kv@2x.jpg" />
+            <img
+              width="1480"
+              height="944"
+              src="img/top-kv@2x.jpg"
+              alt="医師・メディカルクラーク・看護師の若手4人がそれぞれに笑顔で医療従事している様子の画像"
+            />
+          </picture>
+          <div class="top-kv-filter" aria-hidden="true"></div>
+        </div>
+        <picture class="top-kv-catchcopy">
+          <source
+            media="(max-width: 767px)"
+            srcset="img/catch-copy-sp@2x.png"
+          />
+          <source media="(min-width: 768px)" srcset="img/catch-copy@2x.png" />
+          <img
+            width="1329"
+            height="538"
+            src="img/catch-copy@2x.png"
+            alt="松山クリニックのキャッチコピー_Face any challenge you face."
+          />
+        </picture>
+      </div>
+      <!-- top-kv end -->
+
+      <!-- news-section -->
+      <section id="news" class="top-news">
+        <div class="top-news-title-container c-title-container">
+          <span class="c-title-en">news</span>
+          <h2 class="c-title">新着情報</h2>
+        </div>
+
+        <div class="top-news-wrapper">
+          <div class="top-news-container">
+            <article class="top-news-card">
+              <a
+                href="https://www.google.com/"
+                class="top-news-card-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="top-news-image">
+                  <img
+                    src="img/top-news-recrutment@2x.jpg"
+                    width="600"
+                    height="400"
+                    alt="医療器具の点検をしている画像"
+                    decoding="async"
+                  />
+                </div>
+                <div class="top-news-category-label">
+                  <span class="top-news-category">採用情報</span>
+                  <time class="top-news-time" datetime="2022-11-05"
+                    >2022.11.05</time
+                  >
+                </div>
+                <h3 class="top-news-card-title">採用採用説明会開催について</h3>
+              </a>
+            </article>
+
+            <article class="top-news-card">
+              <a
+                href="https://www.google.com/"
+                class="top-news-card-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="top-news-image">
+                  <img
+                    src="img/top-news-seminar@2x.jpg"
+                    width="600"
+                    height="400"
+                    alt="新人研修のミーティング画像"
+                    decoding="async"
+                  />
+                </div>
+                <div class="top-news-category-label">
+                  <span class="top-news-category">採用情報</span>
+                  <time class="top-news-time" datetime="2022-11-05"
+                    >2022.11.05</time
+                  >
+                </div>
+                <h3 class="top-news-card-title">
+                  松山クリニック開催 無料の新卒セミナーのご案内
+                </h3>
+              </a>
+            </article>
+
+            <article class="top-news-card">
+              <a
+                href="https://www.google.com/"
+                class="top-news-card-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="top-news-image">
+                  <img
+                    src="img/top-news-recrutment2023@2x.jpg"
+                    width="600"
+                    height="400"
+                    alt="新人研修中の様子の画像"
+                    decoding="async"
+                  />
+                </div>
+                <div class="top-news-category-label">
+                  <span class="top-news-category">採用情報</span>
+                  <time class="top-news-time" datetime="2022-11-05"
+                    >2022.11.05</time
+                  >
+                </div>
+                <h3 class="top-news-card-title">
+                  2023卒の新卒採用を終了致しました。
+                </h3>
+              </a>
+            </article>
+          </div>
+
+          <div class="top-news-button">
+            <a
+              href="https://www.google.com/"
+              class="c-button-news-more c-button-news-more--white"
+              target="_blank"
+              rel="noopener noreferrer"
+              >more</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- news-section end -->
+
+      <!-- greeting-section -->
+      <section id="greeting" class="top-greeting">
+        <div class="top-greeting-wrapper">
+          <div class="top-greeting-image-wrapper">
+            <img
+              src="img/top-greeting-medicalclerk@2x.jpg"
+              class="top-greeting-image"
+              width="1000"
+              height="1334"
+              alt="微笑むメディアクラークの画像"
+              decoding="async"
+            />
+          </div>
+          <div class="top-greeting-container">
+            <div class="c-title-container">
+              <span class="c-title-en">greeting</span>
+              <h2 class="c-title">ご挨拶</h2>
+            </div>
+            <div class="top-greeting-copy">
+              <span class="top-greeting-copy-inner">
+                <span>命を守る、</span><span>未来を創る。</span>
+              </span>
+              共に歩む医療の道。
+            </div>
+            <div class="top-greeting-text-wrapper">
+              <div class="top-greeting-text">
+                <p class="top-greeting-text-inner">
+                  <span>私たちは、患者さまの笑顔のために</span
+                  >日々研鑽を重ねています。
+                </p>
+                <p>医療の最前線で、あなたの力を活かしませんか？</p>
+              </div>
+              <p class="top-greeting-text">
+                共に成長し、地域医療に貢献できる仲間を求めています。
+              </p>
+            </div>
+            <div class="top-greeting-button">
+              <a
+                href="https://www.google.com/"
+                class="c-button-greeting c-button-greeting--white"
+                target="_blank"
+                rel="noopener noreferrer"
+                >私たちからのご挨拶</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- feature-section -->
+      <section id="feature" class="top-feature l-container">
+        <div class="top-feature-wrapper">
+          <div class="top-feature-text-area l-container-sp340-pc1100">
+            <div class="top-feature-title-container c-title-container">
+              <span class="c-title-en">feature</span>
+              <h2 class="top-feature-title c-title">３つの特徴</h2>
+            </div>
+            <p class="top-feature-text">
+              最新の設備と公平な評価制度、そしてフラットな組織文化が、あなたの可能性を最大限に引き出します。共に学び、高め合える環境で、医療のプロフェッショナルとして輝きましょう。
+            </p>
+          </div>
+
+          <div class="top-feature-image-container l-container-sp352-pc1100">
+            <ul class="top-feature-list">
+              <li class="top-feature-item">
+                <picture class="top-feature-image">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="img/top-feature-seminarroom-sp@2x.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/top-feature-seminarroom@2x.jpg"
+                  />
+                  <img
+                    width="704"
+                    height="880"
+                    src="img/top-feature-assessment@2x.jpg"
+                    alt="セミナールームでカンファレンスをしているの画像"
+                  />
+                </picture>
+                <div class="top-feature-item-inner">
+                  <h2 class="top-feature-item-title">セミナールームを設置</h2>
+                  <span class="top-feature-item-title-en"
+                    >set up seminar room</span
+                  >
+                </div>
+              </li>
+              <li class="top-feature-item">
+                <picture class="top-feature-image">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="img/top-feature-workplace-sp@2x.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/top-feature-workplace@2x.jpg"
+                  />
+                  <img
+                    width="704"
+                    height="880"
+                    src="img/top-feature-workplace@2x.jpg"
+                    alt="医師と看護師による診療時間前のミーティング画像"
+                  />
+                </picture>
+                <div class="top-feature-item-inner">
+                  <h2 class="top-feature-item-title">フラットな環境</h2>
+                  <span class="top-feature-item-title-en"
+                    >inclusive workplace</span
+                  >
+                </div>
+              </li>
+              <li class="top-feature-item">
+                <picture class="top-feature-image">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="img/top-feature-assessment-sp@2x.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/top-feature-assessment@2x.jpg"
+                  />
+                  <img
+                    width="704"
+                    height="880"
+                    src="img/top-feature-assessment-sp@2x.jpg"
+                    alt="人事評価制度についての説明会の様子"
+                  />
+                </picture>
+                <div class="top-feature-item-inner">
+                  <h2 class="top-feature-item-title">制度の整備と公平な評価</h2>
+                  <span class="top-feature-item-title-en">fair assessment</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- feature-section end -->
+
+      <!-- interview-section -->
+      <section id="interview" class="top-interview">
+        <!-- 背景画像 -->
+        <div class="top-interview-bg" aria-hidden="true">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="img/top-interview-img-sp@2x.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/top-interview-img@2x.jpg"
+            />
+            <img
+              src="img/top-interview-img@2x.jpg"
+              alt=""
+              width="1440"
+              height="472"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <!-- 背景画像 end -->
+        <!-- <section id="interview" class="top-interview"> -->
+        <div class="top-interview-wrapper l-container-sp340-pc1300">
+          <div class="top-interview-title-container c-title-container">
+            <span class="c-title-en">interview</span>
+            <h2 class="top-interview-title c-title">インタビュー</h2>
+          </div>
+
+          <ul class="top-interview-list">
+            <li class="top-interview-item">
+              <img
+                class="top-interview-image"
+                src="img/top-interview-nurse@2x.png"
+                width="1048"
+                height="780"
+                alt="当院屋上より看護師3人が外を眺めている様子の画像"
+                decoding="async"
+              />
+              <p class="top-interview-text">
+                <span>チームの絆が</span><span>患者さまを支える力に。</span>
+              </p>
+              <div class="top-interview-button">
+                <a
+                  href="https://www.google.com/"
+                  class="c-button-interview c-button-interview--lightblue"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >看護師のインタビュー一覧</a
+                >
+              </div>
+            </li>
+            <li class="top-interview-item">
+              <img
+                class="top-interview-image"
+                src="img/top-interview-medicalclerk@2x.png"
+                width="1048"
+                height="780"
+                alt="メディカルクラークが中央に位置し、医師・看護師が各々仕事をしている様子の画像"
+                decoding="async"
+              />
+              <p class="top-interview-text">
+                <span>仕事もプライベートも</span><span>イキイキと。</span>
+              </p>
+              <div class="top-interview-button">
+                <a
+                  href="https://www.google.com/"
+                  class="c-button-interview c-button-interview--lightgreen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >事務員のインタビュー一覧</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- interview-section end -->
+
+      <!-- entry-section -->
+      <section id="entry" class="top-entry">
+        <div class="top-entry-wrapper l-container">
+          <div class="top-entry-image-container">
+            <img
+              src="img/top-entry@2x.jpg"
+              class="top-entry-image"
+              width="1480"
+              height="944"
+              alt="若手のメディカルクラーク・医師・看護師が笑顔で医療に従事している様子の画像"
+              decoding="async"
+            />
+            <div class="top-entry-image-filter" aria-hidden="true"></div>
+          </div>
+
+          <div class="top-entry-text-container">
+            <div class="top-entry-title-container c-title-container">
+              <span class="c-title-en">entry</span>
+              <h2 class="top-entry-title c-title">エントリー</h2>
+            </div>
+            <p class="top-entry-text">
+              <span>あなたの一歩が、多くの笑顔につながります。</span
+              ><span>いま、その第一歩を踏み出す時です。</span
+              >ぜひ、あなたの想いをお聞かせください。
+            </p>
+            <div class="top-entry-button">
+              <a
+                href="https://www.google.com/"
+                class="c-button-entry"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="c-button-entry-text">
+                  entry<span>エントリー</span>
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- entry-section end -->
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="l-container-sp340-pc1300">
+        <div class="footer-company-info">
+          <picture class="footer-logo">
+            <source media="(max-width: 767px)" srcset="img/logo-blue-sp.svg" />
+            <source media="(min-width: 768px)" srcset="img/logo-blue.svg" />
+            <img
+              src="img/logo-blue.svg"
+              alt="MATSUYAMA CLINIC"
+              width="283"
+              height="42"
+            />
+          </picture>
+          <div class="footer-nav-inner">
+            <nav class="footer-nav" aria-label="サブナビゲーション">
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a href="#greeting">ご挨拶</a></li>
+                <li class="footer-nav-item">
+                  <a href="#feature">３つの特徴</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#interview">インタビュー</a>
+                </li>
+                <li class="footer-nav-item"><a href="#news">新着情報</a></li>
+                <li class="footer-nav-item"><a href="#">トピック</a></li>
+              </ul>
+            </nav>
+            <div class="footer-button">
+              <a
+                href="https://www.google.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >コーポレートサイト</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-link">
+          <ul class="footer-link-list">
+            <li class="footer-link-item">
+              <a
+                href="https://www.google.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >サイトマップ</a
+              >
+            </li>
+            <li class="footer-link-item">
+              <a
+                href="https://www.google.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >プライバシーポリシー</a
+              >
+            </li>
+          </ul>
+          <small class="footer-copyright"
+            >Copyright&copy;All Right Reserved.</small
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- footer-end -->
+  </body>
+</html>

@@ -1,0 +1,174 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-feature
+------------------------------
+*/
+.top-feature {
+  position: relative;
+  z-index: 1;
+  padding-top: 120rem;
+  background: linear-gradient(180deg, #e0ebee 0%, rgba(224, 235, 238, 0) 100%);
+}
+
+// ロゴ背景画像
+.top-feature::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/top-feature-logo-sp@2x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+  width: 308rem;
+  height: 301rem;
+  top: 0;
+  right: 0;
+
+  @include g.mq() {
+    background-image: url(../img/top-feature-logo@2x.png);
+    width: 745rem;
+    height: 598rem;
+    top: auto;
+    left: 0;
+    right: auto;
+    bottom: 0;
+  }
+}
+
+.top-feature-wrapper {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  gap: 40rem;
+
+  @include g.mq() {
+    gap: 70rem;
+  }
+}
+
+.top-feature-text-area {
+  display: flex;
+  flex-direction: column;
+  gap: 32rem;
+
+  @include g.mq() {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.top-feature-title-container {
+  flex-direction: column;
+  gap: 0;
+  align-items: start;
+}
+
+.top-feature-title {
+  display: flex;
+  gap: 8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-feature-title::before {
+  content: "";
+  display: block;
+  width: 73rem;
+  height: 1rem;
+  background-color: var(--color-font-light);
+
+  @include g.mq() {
+    width: 122rem;
+  }
+}
+
+.top-feature-text {
+  line-height: 2;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  @include g.mq() {
+    max-width: 731rem;
+  }
+}
+
+.top-feature-list {
+  display: grid;
+  gap: 24rem;
+
+  @include g.mq() {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22rem;
+  }
+}
+.top-feature-item {
+  position: relative;
+  counter-increment: title-counter; // counter-incrementのカウンター名
+}
+.top-feature-image img {
+  width: 100%;
+  aspect-ratio: 352 / 280;
+
+  @include g.mq() {
+    aspect-ratio: 352 / 440;
+  }
+}
+.top-feature-item-inner {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 133rem;
+  background: linear-gradient(
+    180deg,
+    rgba(39, 56, 78, 0) 0%,
+    rgba(39, 56, 78, 0.5) 100%
+  );
+  padding-left: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8rem;
+
+  @include g.mq() {
+    padding-left: 32rem;
+    width: 352rem;
+    height: 149rem;
+    bottom: 0;
+    left: 0;
+  }
+}
+.top-feature-item-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  font-size: 22rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: var(--color-font-white);
+
+  &::before {
+    content: counter(
+      title-counter,
+      decimal-leading-zero
+    ); // counter-incrementの設定_"01"のような二桁数字はdecimal-leading-zeroを追記
+    font-family: var(--font-family-en);
+    font-size: 18rem;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+}
+
+.top-feature-item-title-en {
+  font-size: 14rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+  color: var(--color-font-white);
+  font-family: var(--font-family-en);
+  text-transform: uppercase;
+}

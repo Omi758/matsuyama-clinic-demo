@@ -1,0 +1,51 @@
+@use "../global" as g;
+
+/*!
+layout > container
+------------------------------
+*/
+
+// sp:指定なし, pc:1300px
+.l-container {
+  @include g.mq() {
+    width: var(--width-content);
+    margin-inline: auto;
+  }
+}
+
+// sp:340px, pc:1300px
+.l-container-sp340-pc1300 {
+  width: calc(340px / 380px * 100%);
+  margin-inline: auto;
+  @include g.mq() {
+    width: var(--width-content);
+  }
+}
+
+//sp:340px, pc:1100px
+.l-container-sp340-pc1100 {
+  width: calc(340px / 380px * 100%);
+  margin-inline: auto;
+  @include g.mq() {
+    width: var(--width-content-s);
+  }
+}
+
+//sp:352px, pc:1100px
+.l-container-sp352-pc1100 {
+  width: calc(352px / 380px * 100%);
+  margin-inline: auto;
+  @include g.mq() {
+    width: var(--width-content-s);
+  }
+}
+
+// .l-container-s {
+//   width: min(90%, var(--width-content-s));
+//   margin-inline: auto;
+// }
+
+// .l-container {
+//   width: min(90%, var(--width-content));
+//   margin-inline: auto;
+// }

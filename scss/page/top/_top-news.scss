@@ -1,0 +1,135 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-news
+------------------------------
+*/
+.top-news {
+  padding: 56rem 0 0 20rem;
+  margin-bottom: 56rem;
+  background-color: var(--color-bg-base);
+
+  @include g.mq() {
+    position: relative;
+    padding: 64rem 50rem 0 120rem;
+    margin-top: -80rem;
+    margin-bottom: 64rem;
+    width: calc(100% - 70rem);
+    z-index: 5;
+  }
+}
+
+.top-news-title-container {
+  padding-bottom: 32rem;
+}
+
+.top-news-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include g.mq() {
+    flex-direction: row;
+    align-items: center;
+    gap: 56rem;
+  }
+}
+
+.top-news-container {
+  display: flex;
+  gap: 24rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: none; /* scrollバーを消すおきまりの2行 */
+  scrollbar-width: none; /* scrollバーを消す */
+  width: 100%;
+
+  @include g.mq() {
+    gap: 32rem;
+    overflow-x: visible;
+    width: auto;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.top-news-card-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.top-news-image {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+.top-news-card {
+  display: flex;
+  flex-direction: column;
+  width: 257rem;
+  flex-shrink: 0; /* カードがコンテナ幅に合わせて縮むのを防止 */
+  @include g.mq() {
+    width: 300rem;
+  }
+
+  &:hover {
+    .top-news-image {
+      img {
+        transform: scale(1.04);
+      }
+    }
+  }
+}
+
+.top-news-category-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 13rem;
+}
+.top-news-category {
+  font-size: 14rem;
+  letter-spacing: 0.05em;
+  color: var(--color-font-light);
+}
+.top-news-time {
+  font-size: 14rem;
+  letter-spacing: 0.05em;
+  font-family: var(--font-family-en);
+  color: var(--color-font-light);
+}
+
+.top-news-card-title {
+  font-size: 18rem;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  margin-top: 7rem;
+  min-height: 54rem; // min-heightで2行分の高さを確保_18rem * line-hight:1.5 * 2行
+
+  @include g.mq() {
+    font-size: 20rem;
+    min-height: 60rem; // 20rem * 1.5 * 2行
+  }
+}
+
+.top-news-button {
+  width: fit-content;
+  margin: 32rem 20rem 0 auto;
+  @include g.mq() {
+    display: block;
+    margin: 0;
+  }
+}
