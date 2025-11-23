@@ -7,6 +7,8 @@
 （仮想 URL）
 [https://omi758.github.io/matsuyama-clinic-demo/](https://omi758.github.io/matsuyama-clinic-demo/)
 
+&nbsp;
+
 ## 📝 Overview（概要）
 
 HelloMentor 課題で制作した医療系クリニックの架空リクルーティングサイト（静的コーディング）です
@@ -23,11 +25,15 @@ HelloMentor 課題で制作した医療系クリニックの架空リクルー�
 
 - 実務を想定して「読みやすさ・保守性・再利用性」を重視した構成
 
+&nbsp;
+
 ## 🛠️ Tech Stack（使用技術）
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="30" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="30" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="30" />
+
+&nbsp;
 
 ## ✨ Features（制作ポイント）
 
@@ -48,6 +54,8 @@ HelloMentor 課題で制作した医療系クリニックの架空リクルー�
 ### 4. CSS アニメーションを使用した UI 効果
 
 - ホバー時のボタンアニメーション
+
+  &nbsp;
 
 ## 📂 Directory（主な構成）
 
