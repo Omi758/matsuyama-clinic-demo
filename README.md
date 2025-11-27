@@ -4,8 +4,8 @@
 
 ## 🔗 Demo
 
-（仮想 URL）
-[https://omi758.github.io/matsuyama-clinic-demo/](https://omi758.github.io/matsuyama-clinic-demo/)
+【 URL 】
+[https://matsuyama-clinic.omiportfolio.com/](https://matsuyama-clinic.omiportfolio.com/)
 
 &nbsp;
 
