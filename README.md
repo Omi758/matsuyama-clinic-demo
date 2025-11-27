@@ -86,3 +86,17 @@ HelloMentor 課題で制作した医療系クリニックの架空リクルー�
         ├── utility
         └── style.scss
 ```
+
+## 💻 Development Environment（開発環境）
+
+- VSCode / GitHub Copilot / Gemini Code Assist
+- SCSS / Live Sass Compiler
+- ES Modules
+
+&nbsp;
+
+## ⚠️ Notes（注意事項）
+
+- 本テーマは学習用に制作しています。
+
+&nbsp;
